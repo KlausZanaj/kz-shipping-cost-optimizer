@@ -117,7 +117,7 @@ def render_result(result):
             st.dataframe(pd.DataFrame(table.records(), columns=table.columns), hide_index=True, width="stretch")
         st.dataframe(frame(assumption_rows(result)), hide_index=True, width="stretch")
     if st.session_state.get("report_bytes"):
-        st.download_button("Scarica report Excel", data=st.session_state["report_bytes"], file_name="kz-logistics-report.xlsx",
+        st.download_button("Scarica report Excel", data=st.session_state["report_bytes"], file_name="kz-shipping-cost-report.xlsx",
                            mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", key="download_report")
         st.caption("Formule semplici con risultati cached. L'XLSX non riesegue il motore quando si modificano le origini.")
     elif st.session_state.get("report_error"):
@@ -125,9 +125,9 @@ def render_result(result):
 
 
 def main():
-    st.set_page_config(page_title="KZ Logistics Cost Lab", page_icon="📦", layout="wide")
-    st.title("KZ Logistics Cost Lab")
-    st.caption("Demo indipendente — dati e tariffe sintetici")
+    st.set_page_config(page_title="KZ Shipping Cost Optimizer", page_icon="📦", layout="wide")
+    st.title("KZ Shipping Cost Optimizer")
+    st.caption("Prototipo indipendente — dati e tariffe sintetici")
     st.write("Confronta il piano originale, la scelta del servizio e il consolidamento prudente, mantenendo partenze, promesse e colli.")
     mode = st.radio("Origine dei dati", ("Sample incluso", "Carica tre CSV"), horizontal=True, key="input_mode")
     files, uploads, errors, sample = {}, [], [], ""

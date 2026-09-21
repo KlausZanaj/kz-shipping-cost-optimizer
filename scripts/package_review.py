@@ -6,8 +6,8 @@ import zlib
 from zipfile import ZIP_DEFLATED, ZipFile, ZipInfo
 
 ROOT = Path(__file__).resolve().parents[1]
-OUTPUT = ROOT / "dist" / "review" / "kz-logistics-cost-lab-review.zip"
-PREFIX = "kz-logistics-cost-lab"
+OUTPUT = ROOT / "dist" / "review" / "kz-shipping-cost-optimizer-review.zip"
+PREFIX = "kz-shipping-cost-optimizer"
 ROOT_FILES = (
     ".gitattributes",
     ".gitignore",

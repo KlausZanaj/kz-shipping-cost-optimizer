@@ -42,7 +42,7 @@ def main():
                     assert cell.find("m:f", ns) is not None
             output = Path(__file__).resolve().parents[1] / "outputs"
             output.mkdir(exist_ok=True)
-            (output / "kz-logistics-report.xlsx").write_bytes(blob)
+            (output / "kz-shipping-cost-report.xlsx").write_bytes(blob)
     (output / "verification.json").write_text(json.dumps(report, default=str, indent=2), encoding="utf-8")
     print(json.dumps(report, default=str, indent=2))
     print("XLSX: 8 fogli, ZIP integro, formule cached C0/C1/C2 riconciliate con il motore.")

@@ -1,4 +1,4 @@
-# Demo di cinque minuti
+# Guida rapida di cinque minuti
 
 Messaggio iniziale: «Ho costruito un prototipo indipendente per trasformare
 tre export sintetici in un confronto dei costi verificabile. Non usa dati
@@ -62,14 +62,14 @@ gestione bulky. **SERVICE_CHANGE** separa 10 EUR di cambio servizio e
 
 ## 3:00–4:00 · Excel verificabile
 
-Tornare al demo e scaricare **kz-logistics-report.xlsx**. Otto fogli:
+Tornare al sample principale e scaricare **kz-shipping-cost-report.xlsx**. Otto fogli:
 Spedizioni, Colli, Tariffe, Qualita_dati, KPI, Confronto, Proposte, Ipotesi.
 In Confronto i costi sommano il dettaglio e le differenze sono formule.
 C2 è presente una volta per gruppo in Proposte. Origini conservate come
 testo e centesimi esatti disponibili. Le formule hanno risultati cached
 calcolati dal programma; XlsxWriter non esegue un ricalcolo Excel.
 
-Controlli manuali da eseguire in Microsoft Excel prima del colloquio:
+Controlli manuali da eseguire in Microsoft Excel prima di una presentazione:
 
 1. Aprire l'XLSX senza messaggi di riparazione. Controllare il grafico, le
    otto schede, le intestazioni, i filtri e le righe bloccate.

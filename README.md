@@ -1,11 +1,9 @@
-# KZ Logistics Cost Lab
+# KZ Shipping Cost Optimizer
 
-KZ Logistics Cost Lab trasforma tre export CSV sintetici di distribuzione B2B
-in un confronto verificabile dei costi di spedizione. Ricalcola il piano
+KZ Shipping Cost Optimizer analizza tre file CSV sintetici — spedizioni, colli
+e tariffe — e produce un confronto verificabile dei costi. Ricalcola il piano
 originale, sceglie servizi ammissibili e propone consolidamenti prudenti senza
-modificare partenze, promesse o colli fisici.
-
-> Questa è una demo indipendente preparata da me (Klaus Zanaj) per un colloquio con GBR Rossetto. Non è un prodotto ufficiale dell’azienda, non utilizza dati o tariffe reali e non è collegata ai suoi sistemi informatici.
+modificare partenze, promesse di consegna o colli fisici.
 
 > Prototipo indipendente per portfolio. Dati e tariffe sintetici. Nessuna integrazione aziendale verificata.
 
@@ -14,7 +12,7 @@ localmente senza account esterni e non richiede rete dopo l'installazione.
 
 ## Anteprima dell'applicazione
 
-![Panoramica di KZ Logistics Cost Lab](docs/screenshots/demo-overview.png)
+![Panoramica di KZ Shipping Cost Optimizer](docs/screenshots/demo-overview.png)
 
 La panoramica mostra copertura del confronto, costi C0/C1/C2 e risparmio sul
 sample incluso. Sono disponibili anche due viste di dettaglio:
@@ -110,7 +108,7 @@ git diff --check
 ```
 
 `verify_demo.py` crea un XLSX dimostrativo ignorato da Git in
-`outputs/kz-logistics-report.xlsx` e riconcilia i valori cached delle formule
+`outputs/kz-shipping-cost-report.xlsx` e riconcilia i valori cached delle formule
 con il motore. `check_http.py` avvia Streamlit su una porta libera, controlla
 pagina e health endpoint, arresta il processo e verifica il rilascio della
 porta. HTTP 200 dimostra l'avvio del server, non l'intero flusso utente.
@@ -178,7 +176,7 @@ Microsoft Excel: i passaggi precisi sono nella guida demo.
 
 ## English summary
 
-KZ Logistics Cost Lab is an independent offline portfolio prototype that
+KZ Shipping Cost Optimizer is an independent offline portfolio prototype that
 turns three synthetic B2B distribution CSV exports into a traceable shipping
 cost comparison. It validates data conservatively, recalculates the original
 plan (C0), chooses the least-cost feasible service per shipment (C1), and

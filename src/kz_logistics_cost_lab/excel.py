@@ -27,7 +27,7 @@ def make_workbook(result: AnalysisResult) -> bytes:
     output = BytesIO()
     workbook = xlsxwriter.Workbook(output, {"in_memory": True, "strings_to_formulas": False,
                                           "strings_to_urls": False, "strings_to_numbers": False})
-    workbook.set_properties({"title": "KZ Logistics Cost Lab", "subject": "Confronto logistico su dati sintetici", "author": "KZ Logistics Cost Lab"})
+    workbook.set_properties({"title": "KZ Shipping Cost Optimizer", "subject": "Confronto logistico su dati sintetici", "author": "KZ Shipping Cost Optimizer"})
     workbook.set_calc_mode("auto")
     formats = {
         "header": workbook.add_format({"bold": True, "font_name": "Arial", "font_size": 10, "font_color": "#FFFFFF", "bg_color": "#243B53", "text_wrap": True, "valign": "vcenter"}),

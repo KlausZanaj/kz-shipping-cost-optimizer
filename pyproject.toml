@@ -3,9 +3,9 @@ requires = ["setuptools>=75"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "kz-logistics-cost-lab"
+name = "kz-shipping-cost-optimizer"
 version = "0.1.0"
-description = "Demo indipendente per il confronto prudente di costi logistici sintetici"
+description = "Prototipo indipendente per analizzare e ottimizzare costi di spedizione sintetici"
 readme = "README.md"
 license = "MIT"
 requires-python = ">=3.13"

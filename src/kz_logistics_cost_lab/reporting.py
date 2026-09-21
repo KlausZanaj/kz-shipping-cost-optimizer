@@ -123,7 +123,7 @@ def quality_rows(result: AnalysisResult) -> list[dict]:
 
 def assumption_rows(result: AnalysisResult) -> list[dict]:
     pairs = [
-        ("Modello", "KZ Logistics Cost Lab 0.1.0"),
+        ("Modello", "KZ Shipping Cost Optimizer 0.1.0"),
         ("Natura", "Prototipo indipendente per portfolio. Dati e tariffe sintetici. Nessuna integrazione aziendale verificata."),
         ("Popolazione", "Solo standard validi con baseline tariffabile e ammissibile. Conclusioni non rappresentative della spesa totale aziendale."),
         ("Calendario", "Lunedì-venerdì, Europe/Rome. Festivi ignorati se non inseriti: non è il calendario italiano completo."),
